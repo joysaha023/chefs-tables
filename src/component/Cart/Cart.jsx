@@ -16,7 +16,7 @@ const Cart = ({carts}) => {
                 <div>
                     {
                         carts.map((item, index) => (
-                            <div key={index} className="flex justify-between">
+                            <div key={index} className="flex justify-between px-1 lg:px-4">
                                 <p>{index + 1}.</p>
                                 <h2>{item.recipe_name.slice(0, 16)}</h2>
                                 <h3>{item.preparing_time}</h3>
