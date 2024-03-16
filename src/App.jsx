@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./component/header/Header";
 import Cards from "./component/cards/Cards";
 import Cart from "./component/Cart/Cart";
+import Footer from "./component/foter/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -59,6 +60,7 @@ function App() {
             <Cart carts={carts} totalCal={totalCal} totalTime={totalTime} handlePreparingBtn={handlePreparingBtn} preparing={preparing}></Cart>
           </div>
         </div>
+        <Footer></Footer>
         <ToastContainer />
       </div>
     </>

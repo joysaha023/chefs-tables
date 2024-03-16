@@ -98,7 +98,7 @@ const Header = () => {
         </nav>
 
         <div>
-          <div  className="background-img mt-4 lg:mt-8 rounded-3xl">
+          <div  className="background-img mt-4 px-2 lg:mt-8 rounded-3xl">
             <h2 className="lexend-font pt-12 lg:pt-32 text-xl lg:text-5xl mx-auto text-white font-semibold w-full text-center lg:w-[897px]">Discover an exceptional cooking class tailored for you!</h2>
             <p className="text-sm lg:text-lg mt-3 lg:mt-6 text-[#FFFFFF] text-center w-full lg:w-[933px] mx-auto font-normal">Welcome to the Recipe Hub of a lifetime! Indulge your senses and ignite your passion for cooking with our exquisite collection of recipes from around the world. </p>
             <div className="flex flex-col lg:flex-row px-8 lg:px-0 justify-center mt-5 lg:mt-10 pb-12 lg:pb-32 gap-4 lg:gap-8">
@@ -108,7 +108,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className=" mx-0 mt-12 lg:mt-24">
+        <div className=" mx-0  mt-12 lg:mt-24">
           <h2 className="text-2xl lg:text-4xl font-bold text-center mb-3 lg:mb-6">Our Recipes</h2>
           <p className="text-sm lg:text-base font-normal w-full mx-auto lg:w-[823px] text-center mx-0  text-[#150B2B99]">
             Welcome to
