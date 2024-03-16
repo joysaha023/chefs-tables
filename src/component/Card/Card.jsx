@@ -1,4 +1,6 @@
 import React from "react";
+import { CiStopwatch } from "react-icons/ci";
+import { AiOutlineFire } from "react-icons/ai";
 import './card.css'
 
 const Card = ({item}) => {
@@ -26,16 +28,18 @@ const Card = ({item}) => {
                 </ul>
             </div>
             <hr className="my-2"/>
-            <div>
-                <div>
-                    
+            <div className="flex justify-start mb-6 gap-4">
+                <div className="flex items-center gap-1">
+                <CiStopwatch />
+                <p className="text-sm">{preparing_time}</p>
                 </div>
-                <div>
-
+                <div className="flex items-center gap-1">
+                <AiOutlineFire />
+                <p className="text-sm">{calories}</p>
                 </div>
             </div>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+            <div className="card-actions justify-start">
+              <button className="btn btn-md rounded-full bg-[#0BE58A]">Want to Cook</button>
             </div>
           </div>
         </div>
