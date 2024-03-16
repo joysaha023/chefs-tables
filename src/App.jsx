@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -8,18 +8,27 @@ import Cart from "./component/Cart/Cart";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [cards, setCards] = useState([])
+
+  useEffect(()=> {
+    fetch('foodapi.json')
+    .then(res => res.json())
+    .then(data => setCards(data))
+  }, [])
 
   return (
     <>
-     <div>
+      <div>
         <Header></Header>
-        <div>
-          <Cards></Cards>
-          <Cart></Cart>
+        <div className="flex flex-col lg:flex-row justify-center mt-6 lg:mt-12 gap-2 lg:gap-5">
+          <div className="basis-[70%]">
+            <Cards cards={cards}></Cards>
+          </div>
+          <div className="basis-[30%]">
+            <Cart></Cart>
+          </div>
         </div>
-     </div>
-
-     
+      </div>
     </>
   );
 }

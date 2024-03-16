@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <div>
+      <div className="lexend-font">
         <nav>
           <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -95,6 +95,16 @@ const Header = () => {
             </div>
           </div>
         </nav>
+
+
+        <div>
+
+        </div>
+
+        <div className='text-center'>
+                <h2 className='text-4xl font-bold mb-6'>Our Recipes</h2>
+                <p className='text-base font-normal text-[#150B2B99]'>This is Our Item section where you can see the item and select item then you can enjoy your day with us.</p>
+            </div>
       </div>
     </div>
   );

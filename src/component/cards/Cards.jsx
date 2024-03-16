@@ -1,10 +1,14 @@
 import React from 'react';
 import Card from '../Card/Card';
 
-const Cards = () => {
+const Cards = ({cards}) => {
+    
     return (
-        <div>
-            <Card></Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+           {
+            cards.map((item)=> (<Card key={item.recipe_id} item={item}></Card>))
+           }
+            
         </div>
     );
 };
