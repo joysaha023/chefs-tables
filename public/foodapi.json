@@ -5,8 +5,8 @@
       "recipe_name": "Spicy Chicken Stir-Fry",
       "short_description": "A flavorful stir-fry with tender chicken and vegetables",
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": 30,
+      "calories": 320
     },
     {
       "recipe_image": "https://i.ibb.co/MDRfXN3/img-2.jpg",
@@ -14,8 +14,8 @@
       "recipe_name": "Vegetarian Pasta Primavera",
       "short_description": "A colorful pasta dish with fresh vegetables and herbs",
       "ingredients": ["300 g pasta", "150 g cherry tomatoes", "100 g spinach", "50 g Parmesan cheese"],
-      "preparing_time": "25 min",
-      "calories": "250 calories"
+      "preparing_time": 25,
+      "calories": 250
     },
     {
       "recipe_image": "https://i.ibb.co/230qfJr/img-3.jpg",
@@ -23,8 +23,8 @@
       "recipe_name": "Beef and Broccoli Stir-Fry",
       "short_description": "Tender beef slices with crisp broccoli in a savory sauce",
       "ingredients": ["400 g beef sirloin", "200 g broccoli florets", "150 ml oyster sauce", "50 g ginger"],
-      "preparing_time": "35 min",
-      "calories": "380 calories"
+      "preparing_time": 35,
+      "calories": 380
     },
     {
       "recipe_image": "https://i.ibb.co/RP7jDGC/img-4.webp",
@@ -32,8 +32,8 @@
       "recipe_name": "Caprese Salad",
       "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil",
       "ingredients": ["250 g fresh mozzarella", "300 g tomatoes", "100 g fresh basil leaves", "30 ml balsamic vinegar"],
-      "preparing_time": "15 min",
-      "calories": "180 calories"
+      "preparing_time": 15,
+      "calories": 180
     },
     {
       "recipe_image": "https://i.ibb.co/pr8GWd5/img-05.jpg",
@@ -41,8 +41,8 @@
       "recipe_name": "Shrimp Scampi",
       "short_description": "Juicy shrimp cooked in a garlic and butter sauce",
       "ingredients": ["500 g shrimp", "100 g butter", "50 ml white wine", "20 g garlic"],
-      "preparing_time": "20 min",
-      "calories": "290 calories"
+      "preparing_time": 20,
+      "calories": 290
     },
     {
       "recipe_image": "https://i.ibb.co/fDFXvjv/img-6.jpg",
@@ -50,7 +50,7 @@
       "recipe_name": "Mushroom Risotto",
       "short_description": "Creamy risotto with flavorful mushrooms and Parmesan cheese",
       "ingredients": ["300 g Arborio rice", "200 g mushrooms", "1 liter vegetable broth", "50 g Parmesan cheese"],
-      "preparing_time": "40 min",
-      "calories": "350 calories"
+      "preparing_time": 40,
+      "calories": 350
     }
   ]

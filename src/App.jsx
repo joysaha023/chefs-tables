@@ -11,6 +11,8 @@ function App() {
   const [cards, setCards] = useState([])
   const [carts, setCarts] = useState([])
   const [preparing, setPrepare] = useState([])
+  const [totalTime, setTime] = useState(0)
+  const [totalCal, setCal] = useState(0)
 
   useEffect(()=> {
     fetch('foodapi.json')
@@ -35,6 +37,13 @@ function App() {
 
     const cookingCart = [...preparing, list]
     setPrepare(cookingCart)
+    
+    
+    const totalTime = preparing.reduce((p, c) => p + c.preparing_time, 0 )
+    setTime(totalTime + list.preparing_time)
+
+    const totalCalories = preparing.reduce((p, c) => p + c.calories, 0 )
+    setCal(totalCalories + list.calories)
   }
 
 
@@ -47,7 +56,7 @@ function App() {
             <Cards cards={cards} handleCookClick={handleCookClick}></Cards>
           </div>
           <div className="basis-[40%]">
-            <Cart carts={carts} handlePreparingBtn={handlePreparingBtn} preparing={preparing}></Cart>
+            <Cart carts={carts} totalCal={totalCal} totalTime={totalTime} handlePreparingBtn={handlePreparingBtn} preparing={preparing}></Cart>
           </div>
         </div>
         <ToastContainer />
