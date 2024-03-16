@@ -3,14 +3,14 @@ import { CiStopwatch } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
 import './card.css'
 
-const Card = ({item}) => {
+const Card = ({item, handleCookClick}) => {
     const {recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = item
   return (
     <div>
       <div>
         <div className="card w-full border-[1px] bg-base-100 ">
           <figure className="p-4 w-[100%]  h-[100%]">
-            <img className=""
+            <img className="rounded-2xl"
               src={recipe_image}
               alt={recipe_name}
             />
@@ -39,7 +39,7 @@ const Card = ({item}) => {
                 </div>
             </div>
             <div className="card-actions justify-start">
-              <button className="btn btn-md rounded-full bg-[#0BE58A]">Want to Cook</button>
+              <button onClick={() => handleCookClick(item)} className="btn btn-md rounded-full bg-[#0BE58A]">Want to Cook</button>
             </div>
           </div>
         </div>

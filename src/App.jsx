@@ -9,6 +9,7 @@ import Cart from "./component/Cart/Cart";
 function App() {
   const [count, setCount] = useState(0);
   const [cards, setCards] = useState([])
+  const [carts, setCarts] = useState([])
 
   useEffect(()=> {
     fetch('foodapi.json')
@@ -16,16 +17,21 @@ function App() {
     .then(data => setCards(data))
   }, [])
 
+  const handleCookClick = (item) =>{
+    const newCarts = [...carts, item]
+    setCarts(newCarts)
+  }
+
   return (
     <>
       <div>
         <Header></Header>
         <div className="flex flex-col lg:flex-row justify-center mt-6 lg:mt-12 gap-2 lg:gap-5">
-          <div className="basis-[70%]">
-            <Cards cards={cards}></Cards>
+          <div className="basis-[60%]">
+            <Cards cards={cards} handleCookClick={handleCookClick}></Cards>
           </div>
-          <div className="basis-[30%]">
-            <Cart></Cart>
+          <div className="basis-[40%]">
+            <Cart carts={carts}></Cart>
           </div>
         </div>
       </div>

@@ -96,15 +96,18 @@ const Header = () => {
           </div>
         </nav>
 
+        <div></div>
 
-        <div>
-
+        <div className=" mx-0">
+          <h2 className="text-4xl font-bold text-center mb-6">Our Recipes</h2>
+          <p className="text-base font-normal w-full mx-auto lg:w-[823px] text-center mx-0  text-[#150B2B99]">
+            Welcome to
+            our recipe hub, where culinary inspiration meets gastronomic
+            delight. a world of flavors, textures, and aromas as we
+            present an  recipes crafted to ignite your taste
+            buds and elevate your cooking experience. 
+          </p>
         </div>
-
-        <div className='text-center'>
-                <h2 className='text-4xl font-bold mb-6'>Our Recipes</h2>
-                <p className='text-base font-normal text-[#150B2B99]'>This is Our Item section where you can see the item and select item then you can enjoy your day with us.</p>
-            </div>
       </div>
     </div>
   );
