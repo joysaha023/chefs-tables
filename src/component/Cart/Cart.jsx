@@ -6,7 +6,7 @@ const Cart = ({carts}) => {
     <div>
       <div className="border-[1px] rounded-2xl">
             <div>
-                <h1 className="text-[24px] text-center mt-8 mb-4 font-bold">Want to cook: </h1>
+                <h1 className="text-[24px] text-center mt-8 mb-4 font-bold">Want to cook: {carts.length}</h1>
                 <hr className="my-2"/>
                 <div className="flex justify-evenly  "> 
                     <p className="text-base font-medium text-[#150B2B99]">Name</p>
@@ -16,7 +16,7 @@ const Cart = ({carts}) => {
                 <div>
                     {
                         carts.map((item, index) => (
-                            <div key={index} className="flex justify-between px-1 lg:px-4">
+                            <div key={index} className="flex justify-between px-1 text-[#150B2B99] bg-[#28282808] fira-font pt-4 lg:px-4">
                                 <p>{index + 1}.</p>
                                 <h2>{item.recipe_name.slice(0, 16)}</h2>
                                 <h3>{item.preparing_time}</h3>

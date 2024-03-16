@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import Header from "./component/header/Header";
 import Cards from "./component/cards/Cards";
@@ -18,9 +18,18 @@ function App() {
   }, [])
 
   const handleCookClick = (item) =>{
-    const newCarts = [...carts, item]
-    setCarts(newCarts)
+    const isExist = carts.find((p) => p.recipe_id == item.recipe_id)
+    if(!isExist){
+      const newCarts = [...carts, item]
+      setCarts(newCarts)
+    }
+    else{
+      toast("already exist")
+    }
   }
+
+
+
 
   return (
     <>
@@ -34,6 +43,7 @@ function App() {
             <Cart carts={carts}></Cart>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   );
