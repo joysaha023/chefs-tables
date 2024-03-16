@@ -10,6 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [cards, setCards] = useState([])
   const [carts, setCarts] = useState([])
+  const [preparing, setPrepare] = useState([])
 
   useEffect(()=> {
     fetch('foodapi.json')
@@ -28,7 +29,13 @@ function App() {
     }
   }
 
+  const handlePreparingBtn = (list) => {
+    const newCart = carts.filter(item => item.recipe_id != list.recipe_id);
+    setCarts(newCart)
 
+    const cookingCart = [...preparing, list]
+    setPrepare(cookingCart)
+  }
 
 
   return (
@@ -40,7 +47,7 @@ function App() {
             <Cards cards={cards} handleCookClick={handleCookClick}></Cards>
           </div>
           <div className="basis-[40%]">
-            <Cart carts={carts}></Cart>
+            <Cart carts={carts} handlePreparingBtn={handlePreparingBtn} preparing={preparing}></Cart>
           </div>
         </div>
         <ToastContainer />
