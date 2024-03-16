@@ -9,7 +9,7 @@ const Card = ({item}) => {
     <div>
       <div>
         <div className="card w-full border-[1px] bg-base-100 ">
-          <figure className="p-4 w-[100%] h-[100%]">
+          <figure className="p-4 w-[100%]  h-[100%]">
             <img className=""
               src={recipe_image}
               alt={recipe_name}
