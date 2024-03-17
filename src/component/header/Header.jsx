@@ -102,7 +102,7 @@ const Header = () => {
             <h2 className="lexend-font pt-12 lg:pt-32 text-xl lg:text-5xl mx-auto text-white font-semibold w-full text-center lg:w-[897px]">Discover an exceptional cooking class tailored for you!</h2>
             <p className="text-sm lg:text-lg mt-3 lg:mt-6 text-[#FFFFFF] text-center w-full lg:w-[933px] mx-auto font-normal">Welcome to the Recipe Hub of a lifetime! Indulge your senses and ignite your passion for cooking with our exquisite collection of recipes from around the world. </p>
             <div className="flex flex-col lg:flex-row px-8 lg:px-0 justify-center mt-5 lg:mt-10 pb-12 lg:pb-32 gap-4 lg:gap-8">
-                <button className="btn btn-md rounded-full border-0 bg-[#0BE58A]">Want to Cook</button>
+                <button className="btn btn-md rounded-full border-0 bg-[#0BE58A]">Explore Now</button>
                 <button className="btn btn-ghost border-[1px] border-white text-white hover:bg-gray-400 rounded-full ">Our Feedback</button>
             </div>
           </div>

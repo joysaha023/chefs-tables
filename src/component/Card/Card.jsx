@@ -31,11 +31,11 @@ const Card = ({item, handleCookClick}) => {
             <div className="flex justify-start mb-6 gap-4">
                 <div className="flex items-center gap-1">
                 <CiStopwatch />
-                <p className="text-sm">{preparing_time}</p>
+                <p className="text-sm">{preparing_time} minutes</p>
                 </div>
                 <div className="flex items-center gap-1">
                 <AiOutlineFire />
-                <p className="text-sm">{calories}</p>
+                <p className="text-sm">{calories} calories</p>
                 </div>
             </div>
             <div className="card-actions justify-start">
