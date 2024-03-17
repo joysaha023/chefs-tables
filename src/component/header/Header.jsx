@@ -1,4 +1,5 @@
 import React from "react";
+import bgImg from "../../assets/banner-img.png"
 import './header.css'
 
 const Header = () => {
@@ -89,7 +90,7 @@ const Header = () => {
                 <div className="w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="./src/assets/user-icon.png"
+                    src="./images/user-icon.png"
                   />
                 </div>
               </div>
@@ -98,7 +99,9 @@ const Header = () => {
         </nav>
 
         <div>
-          <div  className="background-img mt-4 px-2 lg:mt-8 rounded-3xl">
+          <div style={{
+            backgroundImage: `url(${bgImg})`
+          }}  className="background-img mt-4 px-2 lg:mt-8 rounded-3xl">
             <h2 className="lexend-font pt-12 lg:pt-32 text-xl lg:text-5xl mx-auto text-white font-semibold w-full text-center lg:w-[897px]">Discover an exceptional cooking class tailored for you!</h2>
             <p className="text-sm lg:text-lg mt-3 lg:mt-6 text-[#FFFFFF] text-center w-full lg:w-[933px] mx-auto font-normal">Welcome to the Recipe Hub of a lifetime! Indulge your senses and ignite your passion for cooking with our exquisite collection of recipes from around the world. </p>
             <div className="flex flex-col lg:flex-row px-8 lg:px-0 justify-center mt-5 lg:mt-10 pb-12 lg:pb-32 gap-4 lg:gap-8">
